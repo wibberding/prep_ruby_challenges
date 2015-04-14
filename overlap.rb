@@ -15,10 +15,8 @@ def overlap(array1, array2)
   # Tests for overlap in x plane.
   if min_x_rectangle2.between?(min_x_rectangle1+1, max_x_rectangle1-1)
     x_crosses = true
-    puts "x1"
   elsif max_x_rectangle2.between?(min_x_rectangle1+1, max_x_rectangle1-1)
     x_crosses = true
-    puts "x2"
   else
     x_crosses = false 
   end
@@ -26,10 +24,8 @@ def overlap(array1, array2)
   # Tests for overlap in y plane.
   if min_y_rectangle2.between?(min_y_rectangle1+1, max_y_rectangle1-1)
     y_crosses = true
-    puts "y1"
   elsif max_y_rectangle2.between?(min_y_rectangle1+1, max_y_rectangle1-1)
     y_crosses = true
-    puts "y2"
   else
     y_crosses = false
   end
@@ -43,7 +39,6 @@ def overlap(array1, array2)
 
 end
 
-
-#overlap([[5,3],[3,4]], [[3,3],[5,5]])
-puts overlap( [ [0,0],[3,3] ], [ [1,1],[4,5] ] ) # expect true
-puts overlap( [ [0,0],[1,4] ], [ [1,1],[3,2] ] ) # expect false
+# Tests
+# puts overlap( [ [0,0],[3,3] ], [ [1,1],[4,5] ] ) # expect true
+# puts overlap( [ [0,0],[1,4] ], [ [1,1],[3,2] ] ) # expect false
