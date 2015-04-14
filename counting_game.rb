@@ -33,13 +33,11 @@ def counting_game(players=10, counting_to=100)
     # Swtiches directions on divisible by 7.
       direction = direction * (-1) if i % 7 ==0
 
-    # Skipp divisible by 11
-
-
+    # Prints to screen and advances player.
     puts "Player #{player} says #{i}"
     player = player + direction
 
-    # Skips divisible by 11 by advancing the playe an extra step
+    # Skips divisible by 11 by advancing the player an extra step
     player = player + direction if i % 11 ==0
   end
 end
